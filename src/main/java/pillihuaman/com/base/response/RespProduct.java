@@ -12,7 +12,21 @@ import lombok.Data;
 @JGlobalMap
 @Data
 public class RespProduct {
-	
+
+	private int idProduct;
+	private Timestamp createDate;
+	private String description;
+	private Date expirationDate;
+	private int idImagen;
+	private float idPrice;
+	private int idSystem;
+	private String userModify;
+	private int idType;
+	private int idUser;
+	private String name;
+	private String status;
+	private Timestamp updateDate;
+	private String userCreate;
 	public int getIdProduct() {
 		return idProduct;
 	}
@@ -37,34 +51,34 @@ public class RespProduct {
 	public void setExpirationDate(Date expirationDate) {
 		this.expirationDate = expirationDate;
 	}
-	public BigDecimal getIdImagen() {
+	public int getIdImagen() {
 		return idImagen;
 	}
-	public void setIdImagen(BigDecimal idImagen) {
+	public void setIdImagen(int idImagen) {
 		this.idImagen = idImagen;
 	}
-	public BigDecimal getIdPrice() {
+	public float getIdPrice() {
 		return idPrice;
 	}
-	public void setIdPrice(BigDecimal idPrice) {
+	public void setIdPrice(float idPrice) {
 		this.idPrice = idPrice;
 	}
-	public BigDecimal getIdSystem() {
+	public int getIdSystem() {
 		return idSystem;
 	}
-	public void setIdSystem(BigDecimal idSystem) {
+	public void setIdSystem(int idSystem) {
 		this.idSystem = idSystem;
 	}
-	public BigDecimal getIdType() {
+	public int getIdType() {
 		return idType;
 	}
-	public void setIdType(BigDecimal idType) {
+	public void setIdType(int idType) {
 		this.idType = idType;
 	}
-	public BigDecimal getIdUser() {
+	public int getIdUser() {
 		return idUser;
 	}
-	public void setIdUser(BigDecimal idUser) {
+	public void setIdUser(int idUser) {
 		this.idUser = idUser;
 	}
 	public String getName() {
@@ -97,20 +111,7 @@ public class RespProduct {
 	public void setUserModify(String userModify) {
 		this.userModify = userModify;
 	}
-	private int idProduct;
-	private Timestamp createDate;
-	private String description;
-	private Date expirationDate;
-	private BigDecimal idImagen;
-	private BigDecimal idPrice;
-	private BigDecimal idSystem;
-	private BigDecimal idType;
-	private BigDecimal idUser;
-	private String name;
-	private String status;
-	private Timestamp updateDate;
-	private String userCreate;
-	private String userModify;
+	
 	
 }
 

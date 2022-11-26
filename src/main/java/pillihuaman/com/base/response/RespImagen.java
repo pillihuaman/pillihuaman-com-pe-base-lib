@@ -7,12 +7,27 @@ import java.util.Date;
 import com.googlecode.jmapper.annotations.JGlobalMap;
 
 import lombok.Data;
+import org.bson.types.ObjectId;
 
 
 @JGlobalMap
 @Data
 public class RespImagen {
-	
+	private int idProduct;
+	private Timestamp createDate;
+	private String description;
+	private Date expirationDate;
+	private BigDecimal idImagen;
+	private BigDecimal idPrice;
+	private BigDecimal idSystem;
+	private BigDecimal idType;
+	private BigDecimal idUser;
+	private String name;
+	private String status;
+	private Timestamp updateDate;
+	private String userCreate;
+	private String userModify;
+	private ObjectId _id;
 	public int getIdProduct() {
 		return idProduct;
 	}
@@ -97,21 +112,14 @@ public class RespImagen {
 	public void setUserModify(String userModify) {
 		this.userModify = userModify;
 	}
-	private int idProduct;
-	private Timestamp createDate;
-	private String description;
-	private Date expirationDate;
-	private BigDecimal idImagen;
-	private BigDecimal idPrice;
-	private BigDecimal idSystem;
-	private BigDecimal idType;
-	private BigDecimal idUser;
-	private String name;
-	private String status;
-	private Timestamp updateDate;
-	private String userCreate;
-	private String userModify;
-	
+
+	public ObjectId get_id() {
+		return _id;
+	}
+
+	public void set_id(ObjectId _id) {
+		this._id = _id;
+	}
 }
 
 
